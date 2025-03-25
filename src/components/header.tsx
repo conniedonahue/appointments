@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AuthButton } from "./auth-btn";
 
 export default function Header() {
   return (
@@ -14,9 +15,7 @@ export default function Header() {
           <Link href="/providers" className="hover:underline">
             Providers
           </Link>
-          <Link href="/signin" className="hover:underline">
-            Sign in
-          </Link>
+          <AuthButton />
         </div>
       </nav>
     </div>
